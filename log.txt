@@ -1,0 +1,44 @@
+esmini GIT REV: v2.59.0-0-75d36c84
+esmini GIT TAG: v2.59.0
+esmini GIT BRANCH: tags/v2.59.0^0
+esmini BUILD VERSION: 5957
+[] [info] Loaded config file: /Users/atrishasarkar/Documents/openscenario/esmini-demo/config.yml (/Users/atrishasarkar/Documents/openscenario/esmini-demo/bin/../config.yml)
+[] [info] Loaded ./esmini-demo/resources/xosc/dataset_scenario.xosc
+[2026-02-13 16:28:34]
+[] [info] Player options: --osc ./esmini-demo/resources/xosc/dataset_scenario.xosc --camera_mode orbit --info_text 1 --logfile_path log.txt --log_level info --text_scale 1.0 --traj_filter 0.1 
+[] [info] No fixed timestep specified - running in realtime speed
+[] [info] Generated seed 3043716472
+[] [info] Loading esmini-demo/resources/xosc/dataset_scenario.xosc (v1.1)
+[] [info] 0 variables
+[] [error] Unsupported geo reference attr: +no_defs
+[] [info] Loaded OpenDRIVE: /Users/atrishasarkar/Documents/openscenario/esmini-demo/resources/xodr/straight_500m.xodr
+[] [info] 1 parameters:
+[] [info]    TargetVehicle = car_red
+[0.000] [info] Window created at 60,60 with size 800,400
+[0.000] [info] Loaded scenegraph: esmini-demo/resources/models/straight_500m.osgb
+[0.000] [info] Adjusted Target bounding box to model car_red.osgb - xyz: 1.46, 0.00, 0.77 lwh: 5.04, 2.04, 1.49
+[0.000] [info] Init Ego LongitudinalAction initState -> startTransition -> runningState
+[0.000] [info] Init Ego TeleportAction initState -> startTransition -> runningState
+[0.000] [info] Starting teleport Action
+[0.000] [info] Ego New position:
+[0.000] [info] Pos(50.00, -1.53, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 s 50.00 offset 0.00 t -1.53
+[0.000] [info] Init Target LongitudinalAction initState -> startTransition -> runningState
+[0.000] [info] Init Target TeleportAction initState -> startTransition -> runningState
+[0.000] [info] Starting teleport Action
+[0.000] [info] Target New position:
+[0.000] [info] Pos(350.00, -1.53, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 s 350.00 offset 0.00 t -1.53
+[0.000] [info] storyBoard initState -> startTransition -> runningState
+[0.000] [info] MyStory initState -> startTransition -> runningState
+[0.000] [info] DummyAct initState -> initToStandbyTransition -> standbyState
+[0.000] [info] Init Ego LongitudinalAction runningState -> endTransition -> completeState
+[0.000] [info] Init Ego TeleportAction runningState -> endTransition -> completeState
+[0.000] [info] Init Target LongitudinalAction runningState -> endTransition -> completeState
+[0.000] [info] Init Target TeleportAction runningState -> endTransition -> completeState
+[0.001] [info] StartTrigger: true, delay: 0.00, 0.0010 > 0.0000, edge: none
+[0.001] [info] Trigger /------------------------------------------------
+[0.001] [info] Group 0:
+[0.001] [info] StartTrigger: true
+[0.001] [info] Trigger  ------------------------------------------------/
+[0.001] [info] DummyAct standbyState -> startTransition -> runningState
+[0.001] [info] DummyManueverGroup initState -> startTransition -> runningState
+[26.569] [info] Closing

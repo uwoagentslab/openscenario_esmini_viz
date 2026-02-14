@@ -1,0 +1,86 @@
+esmini GIT REV: v2.59.0-0-75d36c84
+esmini GIT TAG: v2.59.0
+esmini GIT BRANCH: tags/v2.59.0^0
+esmini BUILD VERSION: 5957
+[] [info] Loaded config file: /Users/atrishasarkar/Documents/openscenario/esmini-demo/config.yml (/Users/atrishasarkar/Documents/openscenario/esmini-demo/bin/../config.yml)
+[] [info] Loaded ./resources/xosc/acc_demo_scenario.xosc
+[2026-02-13 16:00:08]
+[] [info] Player options: --osc ./resources/xosc/acc_demo_scenario.xosc --camera_mode orbit --info_text 1 --logfile_path log.txt --log_level info --text_scale 1.0 --traj_filter 0.1 
+[] [info] No fixed timestep specified - running in realtime speed
+[] [info] Generated seed 1055734397
+[] [info] Loading resources/xosc/acc_demo_scenario.xosc (v1.1)
+[] [info] 0 variables
+[] [error] Unsupported geo reference attr: +no_defs
+[] [info] Loaded OpenDRIVE: resources/xodr/straight_500m.xodr
+[] [info] Expr ${250/3.6} = 250/3.6 = 69.4444444444
+[] [info] Expr ${$EgoSpeed / 3.6} = 120 / 3.6 = 33.3333333333
+[] [warn] Missing esminiController property, using controller name: ACCController
+[] [info] Expr ${$EgoSpeed / 3.6} = 120 / 3.6 = 33.3333333333
+[] [warn] In OSC 1.1 ActivateControllerAction should be placed under ControllerAction. Accepting anyway.
+[] [warn] In OSC 1.1 ActivateControllerAction should be placed under ControllerAction. Accepting anyway.
+[] [info] Expr ${$TargetSpeed / 3.6} = 30 / 3.6 = 8.3333333333
+[] [info] Expr ${0.25 * $EgoSpeed / 3.6} = 0.25 * 120 / 3.6 = 8.3333333333
+[] [info] 11 parameters:
+[] [info]    Brake2Time = 20
+[] [info]    AccelerateTime = 17
+[] [info]    BrakeTime = 11
+[] [info]    LaneChange2Time = 7
+[] [info]    LaneChange1Time = 5
+[] [info]    TargetS = 100
+[] [info]    EgoS = 20
+[] [info]    TargetSpeed = 30
+[] [info]    EgoSpeed = 120
+[] [info]    TargetVehicle = car_red
+[] [info]    HostVehicle = car_white
+[0.000] [info] Window created at 60,60 with size 800,400
+[0.000] [info] Loaded scenegraph: resources/models/straight_500m.osgb
+[0.000] [info] Adjusted Target bounding box to model car_red.osgb - xyz: 1.46, 0.00, 0.77 lwh: 5.04, 2.04, 1.49
+[0.000] [info] Init Ego TeleportAction initState -> startTransition -> runningState
+[0.000] [info] Starting teleport Action
+[0.000] [info] Ego New position:
+[0.000] [info] Pos(20.00, -1.53, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 s 20.00 offset 0.00 t -1.53
+[0.000] [info] Init Ego LongitudinalAction initState -> startTransition -> runningState
+[0.000] [info] Controller ACCController active on domains: Longitudinal (mask=0x1)
+[0.000] [info] Init Ego ActivateControllerAction initState -> startTransition -> runningState
+[0.000] [info] Init Ego ActivateControllerAction runningState -> endTransition -> completeState
+[0.000] [info] Init Target TeleportAction initState -> startTransition -> runningState
+[0.000] [info] Starting teleport Action
+[0.000] [info] Target New position:
+[0.000] [info] Pos(100.00, -1.53, 0.00) Rot(0.00, 0.00, 0.00) roadId 1 laneId -1 s 100.00 offset 0.00 t -1.53
+[0.000] [info] No controller assigned to object Target!
+[0.000] [info] Init Target LongitudinalAction initState -> startTransition -> runningState
+[0.000] [info] storyBoard initState -> startTransition -> runningState
+[0.000] [info] CutInAndBrakeStory initState -> startTransition -> runningState
+[0.000] [info] CutInAndBrakeAct initState -> initToStandbyTransition -> standbyState
+[0.000] [info] Init Ego TeleportAction runningState -> endTransition -> completeState
+[0.000] [info] Init Ego LongitudinalAction runningState -> endTransition -> completeState
+[0.000] [info] Init Target TeleportAction runningState -> endTransition -> completeState
+[0.000] [info] Init Target LongitudinalAction runningState -> endTransition -> completeState
+[0.001] [info] CutInActStart: true, delay: 0.00, 0.0010 > 0.0000, edge: none
+[0.001] [info] Trigger /------------------------------------------------
+[0.001] [info] Group 0:
+[0.001] [info] CutInActStart: true
+[0.001] [info] Trigger  ------------------------------------------------/
+[0.001] [info] CutInAndBrakeAct standbyState -> startTransition -> runningState
+[0.001] [info] CutInAndBrakeSequence initState -> startTransition -> runningState
+[0.001] [info] LaneChangeManeuvers initState -> startTransition -> runningState
+[0.001] [info] LaneChange1Event initState -> initToStandbyTransition -> standbyState
+[0.001] [info] LaneChange2Event initState -> initToStandbyTransition -> standbyState
+[0.001] [info] TargetBrakeEvent initState -> initToStandbyTransition -> standbyState
+[0.001] [info] TargetAccelerateEvent initState -> initToStandbyTransition -> standbyState
+[0.001] [info] TargetBrake2Event initState -> initToStandbyTransition -> standbyState
+[0.001] [info] EgoSpeedChange initState -> startTransition -> runningState
+[0.001] [info] EgoSpeedManeuver initState -> startTransition -> runningState
+[0.001] [info] EgoSpeedEvent initState -> initToStandbyTransition -> standbyState
+[0.001] [info] EgoSpeedEvent2 initState -> initToStandbyTransition -> standbyState
+[2.011] [info] EgoSpeedCondition: true, delay: 0.00, 2.0110 > 2.0000, edge: rising
+[2.011] [info] Trigger /------------------------------------------------
+[2.011] [info] Group 0:
+[2.011] [info] EgoSpeedCondition: true
+[2.011] [info] Trigger  ------------------------------------------------/
+[2.011] [info] EgoSpeedEvent standbyState -> startTransition -> runningState
+[2.011] [info] EgoSpeedAction initState -> startTransition -> runningState
+[2.011] [info] EgoSpeedAction runningState -> endTransition -> completeState
+[2.011] [info] EgoSpeedEvent complete after 1 execution
+[2.011] [info] EgoSpeedEvent runningState -> endTransition -> completeState
+[3.678] [info] Closing
